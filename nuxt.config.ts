@@ -10,6 +10,13 @@ export default defineNuxtConfig({
     buildAssetsDir: 'assets',
   },
 
+  modules: ['@nuxt/ui'],
+
+  css: ['~/assets/css/main.css'],
+  ui: {
+    colorMode: false
+  },
+
   // 3. บอก Nitro ให้เตรียมไฟล์สำหรับ GitHub Pages
   nitro: {
     preset: 'github-pages',
